@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body,
+input{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+}
+
+body{
+  width: 100%;
+  background: #FAFAFA;
+  color: #111517;
+  min-height: 100vh;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.dp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-theme{
+  background-color: #202C36;
+}
+
+.dark-theme p, .dark-theme h1, .dark-theme span, .dark-theme .title h2{
+  color: #ffffff;
+}
+
+.dark-theme li:hover{
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.theme-block{
+  background: #2B3844;
+  color: #ffffff;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384); 
+}
+
+.theme-block input, .theme-block .icon-select, .theme-block input::placeholder{
+  color: #ffffff;
+  stroke: #ffffff;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container{
+    padding: 0 24px;
+  }
+
+  .filter{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .cards{
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .filter{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .cards{
+    justify-content: center;
+  }
+
+  .search{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .header .container{
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
